@@ -1,6 +1,6 @@
-require('nvim-tree').setup({
+require("nvim-tree").setup({
   view = {
-    side = 'right',
+    side = "right",
     number = true,
     relativenumber = true,
   },
@@ -11,7 +11,7 @@ require('nvim-tree').setup({
     icons = {
       glyphs = {
         git = {
-          untracked = '',
+          untracked = "",
         },
       },
     },
@@ -29,5 +29,5 @@ require('nvim-tree').setup({
   },
 })
 
-local api = require('nvim-tree.api')
-vim.keymap.set('n', '<Leader>t', api.tree.toggle, {})
+local api = require("nvim-tree.api")
+vim.keymap.set("n", "<Leader>t", api.tree.toggle, {})

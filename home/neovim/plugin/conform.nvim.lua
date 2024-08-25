@@ -1,17 +1,17 @@
-require('conform').setup({
+require("conform").setup({
   formatters_by_ft = {
-    c = {'clang_format'},
-    cpp = {'clang_format'},
-    css = {'prettier'},
-    javascript = {'prettier'},
-    json = {'prettier'},
-    lua = {'stylua'},
-    markdown = {'prettier'},
-    nix = {'nixpkgs_fmt'},
-    python = {'black'},
-    rust = {'rustfmt'},
-    typescript = {'prettier'},
-    yaml = {'prettier'},
+    c = { "clang_format" },
+    cpp = { "clang_format" },
+    css = { "prettier" },
+    javascript = { "prettier" },
+    json = { "prettier" },
+    lua = { "stylua" },
+    markdown = { "prettier" },
+    nix = { "nixpkgs_fmt" },
+    python = { "black" },
+    rust = { "rustfmt" },
+    typescript = { "prettier" },
+    yaml = { "prettier" },
   },
 
   format_on_save = function(bufnr)
@@ -26,7 +26,7 @@ require('conform').setup({
   end,
 })
 
-vim.api.nvim_create_user_command('ConformToggle', function(args)
+vim.api.nvim_create_user_command("ConformToggle", function(args)
   vim.g.conform_disable = not vim.g.conform_disable
-  vim.api.nvim_echo({{'Format on save '}, {vim.g.conform_disable and 'disabled' or 'enabled'}}, false, {})
-end, { desc = 'Toggle format on save' })
+  vim.api.nvim_echo({ { "Format on save " }, { vim.g.conform_disable and "disabled" or "enabled" } }, false, {})
+end, { desc = "Toggle format on save" })
