@@ -1,9 +1,9 @@
-require('lualine').setup({
+require("lualine").setup({
   sections = {
     lualine_b = {},
     lualine_c = {
       {
-        'filename',
+        "filename",
         path = 1,
       },
     },
@@ -13,10 +13,10 @@ require('lualine').setup({
   inactive_sections = {
     lualine_c = {
       {
-        'filename',
+        "filename",
         path = 1,
       },
     },
   },
-  extensions = {'nvim-tree'},
+  extensions = { "nvim-tree" },
 })
