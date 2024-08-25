@@ -10,6 +10,7 @@ require('conform').setup({
     python = {'black'},
     rust = {'rustfmt'},
     typescript = {'prettier'},
+    yaml = {'prettier'},
   },
 
   format_on_save = function(bufnr)
