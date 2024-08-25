@@ -3,7 +3,6 @@ require('conform').setup({
     c = {'clang_format'},
     cpp = {'clang_format'},
     css = {'prettier'},
-    html = {'prettier'},
     javascript = {'prettier'},
     json = {'prettier'},
     jsonc = {'prettier'},
