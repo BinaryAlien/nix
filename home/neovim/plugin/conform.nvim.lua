@@ -5,6 +5,7 @@ require('conform').setup({
     css = {'prettier'},
     javascript = {'prettier'},
     json = {'prettier'},
+    lua = {'stylua'},
     markdown = {'prettier'},
     nix = {'nixpkgs_fmt'},
     python = {'black'},
