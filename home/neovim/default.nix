@@ -45,6 +45,7 @@ in
       nodePackages_latest.prettier
       nodejs
       rustfmt
+      stylua
 
       # Telescope
       ripgrep
