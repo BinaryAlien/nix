@@ -1,0 +1,3 @@
+[submodule "home/alacritty/catppuccin"]
+	path = home/alacritty/catppuccin
+	url = https://github.com/catppuccin/alacritty.git
