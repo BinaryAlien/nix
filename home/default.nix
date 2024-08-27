@@ -1,5 +1,6 @@
 { ... }: {
   imports = [
+    ./alacritty
     ./bash.nix
     ./git.nix
     ./neovim

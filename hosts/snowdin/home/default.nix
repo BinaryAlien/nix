@@ -1,6 +1,7 @@
 { config, ... }: {
   imports = [
     ../../../home
+    ./alacritty.nix
     ./bash.nix
     ./tmux.nix
   ];
