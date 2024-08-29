@@ -2,6 +2,7 @@
   imports = [
     ./alacritty
     ./bash.nix
+    ./eza.nix
     ./git.nix
     ./neovim
     ./starship.nix
@@ -15,7 +16,6 @@
   home.shellAliases = {
     c = "clear";
     g = "git";
-    l = "ls --color=auto -alhF";
   };
 
   programs.home-manager.enable = true;
