@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
   imports = [
     ./alacritty
     ./bash.nix
@@ -8,14 +8,21 @@
     ./tmux
   ];
 
+  home.packages = with pkgs; [
+    eza
+  ];
+
   home.sessionVariables = {
     LESSHISTFILE = "/dev/null";
   };
 
   home.shellAliases = {
     c = "clear";
+    eza = "eza --icons=automatic";
     g = "git";
-    l = "ls --color=auto -alhF";
+    l = "eza -l";
+    la = "eza -al";
+    ls = "eza";
   };
 
   programs.home-manager.enable = true;
