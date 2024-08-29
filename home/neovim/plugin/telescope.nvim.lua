@@ -1,5 +1,6 @@
 require("telescope").setup({
   defaults = {
+    history = false,
     mappings = {
       i = {
         ["<C-c>"] = "send_to_qflist",
