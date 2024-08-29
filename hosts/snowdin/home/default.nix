@@ -1,4 +1,4 @@
-{ config, ... }: {
+{ config, pkgs, ... }: {
   imports = [
     ../../../home
     ./alacritty.nix
@@ -7,6 +7,10 @@
   ];
 
   home.file.".nixpkgs/darwin-configuration.nix".source = config.lib.file.mkOutOfStoreSymlink ../configuration.nix;
+
+  home.packages = with pkgs; [
+    gimp
+  ];
 
   home.username = "binary";
   home.homeDirectory = "/Users/binary";
