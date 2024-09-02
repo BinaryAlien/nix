@@ -10,6 +10,7 @@
 
   home.packages = with pkgs; [
     gimp
+    python3
   ];
 
   home.username = "binary";
