@@ -10,6 +10,7 @@
     clang
     man-pages
     man-pages-posix
+    openssh
   ];
 
   fonts.packages = [
