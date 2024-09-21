@@ -7,6 +7,7 @@
 
   home.packages = with pkgs; [
     ffmpeg
+    yt-dlp
   ];
 
   home.username = "nixos";
