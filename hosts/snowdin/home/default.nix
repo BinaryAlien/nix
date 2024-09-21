@@ -11,6 +11,7 @@
   home.packages = with pkgs; [
     gimp
     python3
+    texliveFull
   ];
 
   home.username = "binary";
