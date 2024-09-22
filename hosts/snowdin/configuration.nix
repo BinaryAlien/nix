@@ -1,5 +1,7 @@
 { pkgs, ... }: {
-  documentation.enable = true;
+  imports = [
+    ../common.nix
+  ];
 
   environment.loginShell = "${pkgs.bashInteractive}/bin/bash -l";
   environment.variables.SHELL = "${pkgs.bashInteractive}/bin/bash";
@@ -8,17 +10,11 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     clang
-    man-pages
-    man-pages-posix
-    openssh
   ];
 
   fonts.packages = [
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
-
-  # Necessary for using flakes on this system.
-  nix.settings.experimental-features = "nix-command flakes";
 
   nixpkgs.hostPlatform = "aarch64-darwin";
 
