@@ -1,17 +1,14 @@
 { pkgs, ... }: {
-  boot.tmp.cleanOnBoot = true;
+  imports = [
+    ../common.nix
+  ];
 
-  documentation.enable = true;
+  boot.tmp.cleanOnBoot = true;
 
   environment.systemPackages = with pkgs; [
     gcc
-    man-pages
-    man-pages-posix
-    openssh
     tree
   ];
-
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
