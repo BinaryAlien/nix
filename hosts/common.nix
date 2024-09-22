@@ -2,6 +2,7 @@
   documentation.enable = true;
 
   environment.systemPackages = with pkgs; [
+    coreutils
     man-pages
     man-pages-posix
     openssh
