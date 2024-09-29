@@ -7,7 +7,6 @@
 
   environment.systemPackages = with pkgs; [
     gcc
-    tree
   ];
 
   # This value determines the NixOS release from which the default
