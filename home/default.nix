@@ -23,6 +23,7 @@
     l = "eza -l";
     la = "eza -al";
     ls = "eza";
+    tree = "eza --tree";
   };
 
   programs.home-manager.enable = true;
