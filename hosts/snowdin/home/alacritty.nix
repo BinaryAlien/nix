@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   programs.alacritty.settings = {
-    font.size = 20;
+    font.size = 21;
 
     # Force Alacritty to use the intended login shell.
     shell = {
