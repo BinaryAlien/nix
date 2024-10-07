@@ -10,7 +10,7 @@
 
   home.packages = with pkgs; [
     gimp
-    python3
+    (python3.withPackages (ps: [ ps.ipython ]))
     texliveFull
   ];
 
