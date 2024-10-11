@@ -19,20 +19,20 @@ in
     viAlias = true;
 
     plugins = with pkgs.vimPlugins; map readLuaConfig [
-      nvim-treesitter.withAllGrammars
-      lualine-nvim
-      telescope-nvim
-      nvim-tree-lua
       conform-nvim
-      nvim-cmp
       lsp-zero-nvim
+      lualine-nvim
+      nvim-cmp
+      nvim-tree-lua
+      nvim-treesitter.withAllGrammars
+      telescope-nvim
     ] ++ map readNixConfig [
       catppuccin-nvim
     ] ++ [
-      nvim-web-devicons
-      nvim-lspconfig
       cmp-nvim-lsp
       luasnip
+      nvim-lspconfig
+      nvim-web-devicons
     ];
 
     extraLuaConfig = builtins.readFile ./options.lua;
