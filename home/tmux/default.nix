@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ lib, pkgs, ... } @ extraArgs: {
   programs.tmux = {
     enable = true;
 
@@ -10,7 +10,7 @@
 
     plugins = [{
       plugin = pkgs.tmuxPlugins.catppuccin;
-      extraConfig = builtins.readFile ./catppuccin.conf;
+      extraConfig = import ./catppuccin.nix extraArgs;
     }];
 
     extraConfig = ''

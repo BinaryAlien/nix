@@ -1,9 +1,9 @@
-{ lib, ... }: {
+{ lib, ... } @ extraArgs: {
   programs.starship = {
     enable = true;
 
     settings = {
-      palette = "catppuccin_macchiato";
+      palette = "catppuccin_${extraArgs.catppuccin-flavor}";
 
       format = lib.concatStrings [
         "$nix_shell"

@@ -6,6 +6,7 @@ nixpkgs.lib.nixosSystem {
     nixos-wsl.nixosModules.wsl
     home-manager.nixosModules.home-manager
     {
+      home-manager.extraSpecialArgs = { catppuccin-flavor = "mocha"; };
       home-manager.useGlobalPkgs = true;
       home-manager.useUserPackages = true;
       home-manager.users."nixos" = import ./home;

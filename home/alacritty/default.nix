@@ -1,6 +1,6 @@
-{ lib, ... }:
+{ lib, ... } @ extraArgs:
 let
-  colors = builtins.fromTOML (builtins.readFile ./catppuccin/catppuccin-macchiato.toml);
+  colors = builtins.fromTOML (builtins.readFile ./catppuccin/catppuccin-${extraArgs.catppuccin-flavor}.toml);
 in
 {
   programs.alacritty = {
