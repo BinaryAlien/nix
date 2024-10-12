@@ -7,6 +7,7 @@
 
   environment.systemPackages = with pkgs; [
     gcc
+    gdb
     gnumake
     man-pages
     man-pages-posix
