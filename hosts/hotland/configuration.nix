@@ -7,6 +7,7 @@
 
   environment.systemPackages = with pkgs; [
     gcc
+    gnumake
   ];
 
   # This value determines the NixOS release from which the default
