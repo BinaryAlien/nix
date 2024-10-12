@@ -10,6 +10,7 @@
 
   home.packages = with pkgs; [
     eza
+    git-lfs
   ];
 
   home.sessionVariables = {
