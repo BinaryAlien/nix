@@ -6,6 +6,7 @@
     ./neovim
     ./starship.nix
     ./tmux
+    ./zoxide.nix
   ];
 
   home.packages = with pkgs; [
