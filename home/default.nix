@@ -7,6 +7,7 @@
     ./neovim
     ./starship.nix
     ./tmux
+    ./zoxide.nix
   ];
 
   home.sessionVariables = {
