@@ -21,6 +21,7 @@ in
     plugins = with pkgs.vimPlugins; map readLuaConfig [
       conform-nvim
       lsp-zero-nvim
+      lsp_signature-nvim
       lualine-nvim
       nvim-cmp
       nvim-tree-lua
