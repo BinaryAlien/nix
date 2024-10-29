@@ -1,4 +1,4 @@
-{ pkgs, ... } @ extraArgs:
+{ lib, pkgs, ... } @ extraArgs:
 let
   readLuaConfig = plugin: {
     inherit plugin;
@@ -36,7 +36,10 @@ in
       nvim-web-devicons
     ];
 
-    extraLuaConfig = builtins.readFile ./options.lua;
+    extraLuaConfig = lib.strings.concatLines (map builtins.readFile [
+      ./options.lua
+      ./mappings.lua
+    ]);
 
     extraPackages = with pkgs; [
       # Language Servers
