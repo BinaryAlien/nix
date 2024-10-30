@@ -5,7 +5,7 @@
     baseIndex = 1;
     clock24 = true;
     keyMode = "vi";
-    shortcut = "s";
+    shortcut = "e";
     terminal = "$TERM";
 
     plugins = [{
