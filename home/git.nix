@@ -6,6 +6,12 @@
     userEmail = "49949198+BinaryAlien@users.noreply.github.com";
     userName = "Binary";
 
+    extraConfig = {
+      pull = {
+        rebase = true;
+      };
+    };
+
     aliases = {
       a = "add";
       b = "branch";
