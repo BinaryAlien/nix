@@ -7,6 +7,10 @@
     userName = "Binary";
 
     extraConfig = {
+      commit = {
+        verbose = true;
+      };
+
       pull = {
         rebase = true;
       };
