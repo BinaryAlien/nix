@@ -1,11 +1,11 @@
-{ lib, pkgs, ... } @ extraArgs: {
+{ pkgs, ... } @ extraArgs: {
   programs.tmux = {
     enable = true;
 
     baseIndex = 1;
     clock24 = true;
     keyMode = "vi";
-    shortcut = "e";
+    shortcut = "a";
     terminal = "$TERM";
 
     plugins = [{
@@ -22,6 +22,7 @@
       bind j select-pane -D
       bind k select-pane -U
       bind l select-pane -R
+
       bind -T copy-mode-vi p send-keys -X copy-pipe-and-cancel "tmux paste-buffer"
       bind -T copy-mode-vi v send-keys -X begin-selection
     '';
