@@ -30,6 +30,7 @@ in
       catppuccin-nvim
     ] ++ [
       cmp-nvim-lsp
+      cmp-nvim-lsp-signature-help
       nvim-web-devicons
     ];
 
