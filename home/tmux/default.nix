@@ -23,6 +23,9 @@
       bind k select-pane -U
       bind l select-pane -R
 
+      bind '"' split-window -c "#{pane_current_path}"
+      bind % split-window -h -c "#{pane_current_path}"
+
       bind -T copy-mode-vi p send-keys -X copy-pipe-and-cancel "tmux paste-buffer"
       bind -T copy-mode-vi v send-keys -X begin-selection
     '';
