@@ -22,6 +22,7 @@
       c = "commit";
       cf = "commit --amend --no-edit";
       co = "checkout";
+      cp = "cherry-pick";
       cs = "commit --amend";
       d = "diff";
       ds = "diff --staged";
