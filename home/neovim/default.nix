@@ -57,6 +57,7 @@ in
       nixpkgs-fmt
       nodePackages_latest.prettier
       nodejs
+      ocamlPackages.ocamlformat
       rustfmt
       stylua
 

@@ -9,6 +9,7 @@ require("conform").setup({
     lua = { "stylua" },
     markdown = { "prettier" },
     nix = { "nixpkgs_fmt" },
+    ocaml = { "ocamlformat" },
     python = { "ruff", "black" },
     rust = { "rustfmt" },
     typescript = { "prettier" },
