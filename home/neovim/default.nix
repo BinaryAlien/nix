@@ -47,6 +47,7 @@ in
       # Language Servers
       ccls
       nodePackages_latest.typescript-language-server
+      ocamlPackages.ocaml-lsp
       pyright
       rust-analyzer
 

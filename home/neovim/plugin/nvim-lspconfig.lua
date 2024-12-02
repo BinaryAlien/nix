@@ -23,6 +23,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 lspconfig.ccls.setup({})
+lspconfig.ocamllsp.setup({})
 lspconfig.pyright.setup({})
 lspconfig.rust_analyzer.setup({
   settings = {
