@@ -43,6 +43,7 @@
       sm = "submodule";
       st = "stash";
       t = "tag";
+      x = "clean";
     };
   };
 }
