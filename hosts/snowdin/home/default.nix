@@ -10,6 +10,7 @@
 
   home.packages = with pkgs; [
     gimp
+    pre-commit
     (python3.withPackages (ps: [ ps.ipython ]))
     texliveFull
   ];
