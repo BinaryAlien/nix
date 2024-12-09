@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
   imports = [
     ./alacritty
     ./bash.nix
@@ -8,6 +8,10 @@
     ./starship.nix
     ./tmux
     ./zoxide.nix
+  ];
+
+  home.packages = with pkgs; [
+    pre-commit
   ];
 
   home.sessionVariables = {
