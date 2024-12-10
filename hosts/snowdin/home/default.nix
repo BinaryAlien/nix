@@ -13,6 +13,7 @@
     pre-commit
     (python3.withPackages (ps: [ ps.ipython ]))
     texliveFull
+    uv
   ];
 
   home.username = "binary";
