@@ -3,6 +3,7 @@
     ../../../home
     ./alacritty.nix
     ./bash.nix
+    ./direnv.nix
     ./tmux.nix
   ];
 
