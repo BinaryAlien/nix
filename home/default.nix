@@ -2,6 +2,7 @@
   imports = [
     ./alacritty
     ./bash.nix
+    ./direnv.nix
     ./eza.nix
     ./git.nix
     ./neovim
