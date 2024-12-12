@@ -11,6 +11,7 @@
   home.packages = with pkgs; [
     gimp
     (python3.withPackages (ps: [ ps.ipython ]))
+    stats
     texliveFull
     uv
   ];
