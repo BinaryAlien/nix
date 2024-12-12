@@ -12,6 +12,7 @@
     gimp
     pre-commit
     (python3.withPackages (ps: [ ps.ipython ]))
+    stats
     texliveFull
     uv
   ];
