@@ -1,8 +1,4 @@
-{ lib, ... } @ extraArgs:
-let
-  colors = builtins.fromTOML (builtins.readFile ./catppuccin/catppuccin-${extraArgs.catppuccin-flavor}.toml);
-in
-{
+{ lib, ... }: {
   programs.alacritty = {
     enable = lib.mkDefault true;
 
@@ -11,6 +7,6 @@ in
         size = lib.mkDefault 17;
         normal.family = "JetBrainsMonoNL Nerd Font";
       };
-    } // colors;
+    };
   };
 }
