@@ -1,13 +1,13 @@
 { pkgs, ... }: {
   imports = [
-    ./alacritty
+    ./alacritty.nix
     ./bash.nix
     ./direnv.nix
     ./eza.nix
     ./git.nix
     ./neovim
     ./starship.nix
-    ./tmux
+    ./tmux.nix
     ./zoxide.nix
   ];
 
@@ -22,6 +22,11 @@
   home.shellAliases = {
     c = "clear";
     g = "git";
+  };
+
+  catppuccin = {
+    enable = true;
+    flavor = "mocha";
   };
 
   programs.home-manager.enable = true;

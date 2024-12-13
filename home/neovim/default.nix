@@ -1,14 +1,9 @@
-{ lib, pkgs, ... } @ extraArgs:
+{ lib, pkgs, ... }:
 let
   readLuaConfig = plugin: {
     inherit plugin;
     type = "lua";
     config = builtins.readFile ./plugin/${plugin.pname}.lua;
-  };
-  readNixConfig = plugin: {
-    inherit plugin;
-    type = "lua";
-    config = import ./plugin/${plugin.pname}.nix extraArgs;
   };
 in
 {
@@ -26,8 +21,6 @@ in
       nvim-tree-lua
       nvim-treesitter.withAllGrammars
       telescope-nvim
-    ] ++ map readNixConfig [
-      catppuccin-nvim
     ] ++ [
       cmp-nvim-lsp
       cmp-nvim-lsp-signature-help
