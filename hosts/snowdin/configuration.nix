@@ -3,7 +3,6 @@
     ../common.nix
   ];
 
-  environment.loginShell = "${pkgs.bashInteractive}/bin/bash -l";
   environment.variables.SHELL = "${pkgs.bashInteractive}/bin/bash";
 
   # List packages installed in system profile. To search by name, run:
@@ -15,7 +14,7 @@
   ];
 
   fonts.packages = [
-    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    pkgs.nerd-fonts.jetbrains-mono
   ];
 
   nixpkgs.hostPlatform = "aarch64-darwin";
