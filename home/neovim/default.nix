@@ -27,14 +27,10 @@ in
       nvim-web-devicons
     ];
 
-    extraLuaConfig = lib.strings.concatLines ([
-      "-- nvim-tree"
-      "vim.g.loaded_netrw = 1"
-      "vim.g.loaded_netrwPlugin = 1"
-    ] ++ (map builtins.readFile [
-      ./options.lua
+    extraLuaConfig = lib.strings.concatMapStrings builtins.readFile [
       ./mappings.lua
-    ]));
+      ./options.lua
+    ];
 
     extraPackages = with pkgs; [
       # Language Servers
