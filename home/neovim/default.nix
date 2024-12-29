@@ -48,9 +48,8 @@ in
       black
       clang-tools
       nixpkgs-fmt
-      nodePackages_latest.prettier
-      nodejs
       ocamlPackages.ocamlformat
+      prettierd
       rustfmt
       stylua
 

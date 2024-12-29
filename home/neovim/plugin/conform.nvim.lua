@@ -2,17 +2,17 @@ require("conform").setup({
   formatters_by_ft = {
     c = { "clang_format" },
     cpp = { "clang_format" },
-    css = { "prettier" },
-    javascript = { "prettier" },
-    json = { "prettier" },
+    css = { "prettierd" },
+    javascript = { "prettierd" },
+    json = { "prettierd" },
     lua = { "stylua" },
-    markdown = { "prettier" },
+    markdown = { "prettierd" },
     nix = { "nixpkgs_fmt" },
     ocaml = { "ocamlformat" },
     python = { "ruff", "black" },
     rust = { "rustfmt" },
-    typescript = { "prettier" },
-    yaml = { "prettier" },
+    typescript = { "prettierd" },
+    yaml = { "prettierd" },
   },
 
   format_on_save = function(bufnr)
