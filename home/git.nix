@@ -32,7 +32,6 @@
       l = "log --oneline -15";
       la = "log --oneline --all --graph";
       m = "merge";
-      mt = "mergetool";
       pf = "push --force-with-lease";
       pl = "pull";
       ps = "push";
