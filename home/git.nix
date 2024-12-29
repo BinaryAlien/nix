@@ -41,7 +41,6 @@
       rt = "restore";
       rv = "revert";
       s = "status -s";
-      sm = "submodule";
       st = "stash";
       t = "tag";
     };
