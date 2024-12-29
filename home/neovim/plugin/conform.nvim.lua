@@ -3,7 +3,6 @@ require("conform").setup({
     c = { "clang_format" },
     cpp = { "clang_format" },
     css = { "prettier" },
-    cuda = { "clang_format" },
     javascript = { "prettier" },
     json = { "prettier" },
     lua = { "stylua" },
