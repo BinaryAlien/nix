@@ -9,7 +9,7 @@ require("conform").setup({
     markdown = { "prettierd" },
     nix = { "nixpkgs_fmt" },
     ocaml = { "ocamlformat" },
-    python = { "ruff", "black" },
+    python = { "ruff_format" },
     rust = { "rustfmt" },
     typescript = { "prettierd" },
     yaml = { "prettierd" },

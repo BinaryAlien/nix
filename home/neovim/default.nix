@@ -41,11 +41,11 @@ in
       rust-analyzer
 
       # Formatters
-      black
       clang-tools
       nixpkgs-fmt
       ocamlPackages.ocamlformat
       prettierd
+      ruff
       rustfmt
       stylua
 
