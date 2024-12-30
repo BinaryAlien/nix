@@ -1,7 +1,6 @@
 -- Diagnostics
 vim.diagnostic.config({
   severity_sort = true,
-
   signs = {
     text = {
       [vim.diagnostic.severity.ERROR] = "",
@@ -10,6 +9,5 @@ vim.diagnostic.config({
       [vim.diagnostic.severity.INFO] = "",
     },
   },
-
   virtual_text = false,
 })
