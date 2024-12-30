@@ -28,6 +28,7 @@ in
     ];
 
     extraLuaConfig = lib.strings.concatMapStrings builtins.readFile [
+      ./diagnostics.lua
       ./mappings.lua
       ./options.lua
     ];
