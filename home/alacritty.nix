@@ -4,7 +4,7 @@
 
     settings = {
       font = {
-        size = lib.mkDefault 17;
+        size = lib.mkDefault 28;
         normal.family = "JetBrainsMonoNL Nerd Font";
       };
     };
