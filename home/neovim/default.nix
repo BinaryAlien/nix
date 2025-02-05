@@ -50,6 +50,9 @@ in
       rustfmt
       stylua
 
+      # prettierd
+      nodejs
+
       # telescope.nvim
       ripgrep
     ];
